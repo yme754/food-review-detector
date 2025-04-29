@@ -1,17 +1,21 @@
-# 🍔 Food Review Fake Detector (NLP Project)
+# 🍔 Genuine vs Fake Food Review Detector
 
-This project builds a machine learning model to detect fake food reviews using Natural Language Processing (NLP).
+This project helps detect whether a food review is genuine or possibly fake using Natural Language Processing (NLP) and Machine Learning (ML).
 
-## Files
-- `main.py`: Train the model and save it.
-- `predict.py`: Use the saved model to predict whether a review is genuine or fake.
+## Project Structure
+- `main.py`: Trains a logistic regression model and saves it.
+- `predict.py`: A simple CLI tool to check if a review is fake or genuine.
+- `app.py`: Streamlit-based web app to interact with the model.
 - `requirements.txt`: List of Python dependencies.
 - `dataset/Reviews.csv`: Dataset ([download from Kaggle](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)).
 
-## How to Run
+## Run Locally
 
 1. Clone this repository
-2. Install dependencies:
+   ```bash
+   https://github.com/yme754/food-review-detector.git
+   ```
+2. Install the required packages:
     ```bash
     pip install -r requirements.txt
     ```
@@ -23,10 +27,7 @@ This project builds a machine learning model to detect fake food reviews using N
     ```bash
     python predict.py
     ```
-
+   
 ## Notes
 - The model uses TF-IDF for feature extraction and Logistic Regression for classification.
 - Only reviews with ratings 4–5 (positive) and 1–2 (negative) are used. Neutral reviews are ignored.
-
-## License
-MIT License
