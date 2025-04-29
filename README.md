@@ -23,9 +23,13 @@ This project helps detect whether a food review is genuine or possibly fake usin
     ```bash
     python main.py
     ```
-4. Make predictions:
+4. Test it from the command line:
     ```bash
     python predict.py
+    ```
+5. Run the web app locally:
+   ```bash
+    streamlit run app.py
     ```
    
 ## Notes
